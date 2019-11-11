@@ -2,12 +2,10 @@ import React from 'react';
 import UserItem from './UserItem';
 import Spinner from '../layout/Spinner';
 
-const Users = ({users, loading}) => {
-
-  if(loading) {
-    return (<Spinner />)
-  }
-  else {
+const Users = ({ users, loading }) => {
+  if (loading) {
+    return <Spinner />;
+  } else {
     return (
       <div style={userStyle}>
         {users.map(user => (
@@ -16,10 +14,7 @@ const Users = ({users, loading}) => {
       </div>
     );
   }
- 
-   
-  
-}
+};
 
 const userStyle = {
   display: 'grid',
