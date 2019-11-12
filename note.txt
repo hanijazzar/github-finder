@@ -1,0 +1,24 @@
+we dispatch an action to a reducer
+action can be the response of an api call
+the data gets updated in the backend
+
+reducer:
+is a function
+takes in an action, 
+handles updating the sate and passes the sate down to the components
+
+
+
+Hooks
+use state and lifecycle methods in a functojnal component
+useState : have state within a functional component
+useEffect: mimic component lifecycle methods such as componentDidMount. this is where u do the api calls
+useContext
+useReducer
+reducer is a function which u can dispatch actions to in order to manipulate your app level state, then it sends down the state to the components
+useRef used for react refs and working with form submissions
+
+Context (resource can be github for example in our app)
+resourceContext.js : initialize context for our resource
+ResourceState.js : save the state and perform actions such as API calls. this becomes a provider where other components can call methods/actions ehre
+resourceReducer.js : pass the new state to the components that use that updated state
